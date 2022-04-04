@@ -14,7 +14,7 @@ app.use(cors({ origin: /http:\/\/(127(\.\d){3}|localhost)/ }));
 app.options("*", cors());
 app.use(apiRoot, router);
 
-const db = {
+let db = {
   Duchas: {
     user: "duchas",
     babkes: "$",
@@ -72,4 +72,4 @@ app.listen(port, () => {
   console.log(`Xujarinam on port ${port}`);
 });
 
-console.log("🚀 ~ parseFloat", isNaN(parseFloat("asd")));
+console.log(db);
