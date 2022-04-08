@@ -69,5 +69,5 @@ router.post("/accounts", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Xujarinam on port ${port}`);
+  console.log(`Xujarinam port ${port}`);
 });
